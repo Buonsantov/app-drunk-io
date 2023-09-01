@@ -2,7 +2,7 @@
     "response": [
         {
             "min": 0,
-            "max": 0.09,
+            "max": 0.1,
             "sanzioni": "Nessuna",
             "sensazione": "Nessuna sensazione",
             "effetti": "Nessun effetto"
