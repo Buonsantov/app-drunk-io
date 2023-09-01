@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1693554408710,
+  "timestamp": 1693555968769,
   "index": "/app-drunk-io/index.html",
   "assetGroups": [
     {
@@ -265,8 +265,8 @@
     "/app-drunk-io/assets/img/mid.jpg": "02bedbb05675be4ebbb0edca1671da0be4351a80",
     "/app-drunk-io/assets/pdf/tabella_alcolemica.pdf": "9e585c2923dde346f155f873c97c51e9feed370d",
     "/app-drunk-io/favicon.ico": "c912026a83cfc03ceada889400e2a94f51f9070a",
-    "/app-drunk-io/index.html": "630e18f6db924829390e0e697c0ca1d3c0c28351",
-    "/app-drunk-io/main.js": "9c3043e9f6264ea6d0de70a3359b43e58b836add",
+    "/app-drunk-io/index.html": "60b43261258ba117afab4d6dacf5721e238f3bd6",
+    "/app-drunk-io/main.js": "ceb2a51de0455b38546d7931448e1b1d540a8362",
     "/app-drunk-io/manifest.webmanifest": "7f3dbcfcf5ca511644ef8b08cc25acf0aaf0b133",
     "/app-drunk-io/polyfills.js": "b8b1d2715ebd0aad9a49373d92324bf239a5c200",
     "/app-drunk-io/runtime.js": "2817fdc326c81c18e2f33a0e74e2b8fdc1278c3c",
