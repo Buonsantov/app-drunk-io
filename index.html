@@ -16,15 +16,39 @@
 
   <div style="text-align: -webkit-center;">
 
-    <h3 class="title-drunk">Drunk.IO</h3>
-    <div>
-      <img src="./assets/icons/drink_144.png" alt="Drunk.io">
-      <div>Stai per essere reindirizzato verso Drunk.IO</div>
-    </div>
-    <script>
-      window.location.href = "https://drunkio.altervista.org/";
+    <body>
+      <div class="container">
+        <h2>Drunk.IO</h2>
 
-    </script>
+        <div class="loader">
+          <span style="--i:0;"></span>
+          <span style="--i:1;"></span>
+          <span style="--i:2;"></span>
+          <span style="--i:3;"></span>
+          <span style="--i:4;"></span>
+          <span style="--i:5;"></span>
+          <span style="--i:6;"></span>
+          <span style="--i:7;"></span>
+        </div>
+      </div>
+
+      <svg>
+        <filter id="Gooey">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10"></feGaussianBlur>
+          <feColorMatrix values="1 0 0 0 0
+         0 1 0 0 0
+         0 0 1 0 0
+         0 0 0 20 -10" />
+        </filter>
+      </svg>
+      <script>
+
+        setTimeout(() => {
+          window.location.href = "https://drunkio.altervista.org/";
+
+        }, 3500);
+
+      </script>
 
 
 
@@ -32,3 +56,88 @@
 </body>
 
 </html>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #006bc6, #1ecafc);
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container h2 {
+    position: absolute;
+    color: #ffffff;
+    font-size: 1.75em;
+    font-weight: 500;
+  }
+
+  .loader {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.25);
+    filter: url(#Gooey);
+  }
+
+  .loader span {
+    position: absolute;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    transform-origin: 150px;
+    background: #ffffff;
+    border-radius: 50%;
+    animation: animate 5s ease-in-out infinite;
+    animation-delay: calc(.20s * var(--i));
+  }
+
+  @keyframes animate {
+
+    0%,
+    10% {
+      width: 100px;
+      height: 100px;
+      transform: rotate(0deg) translateX(120px);
+    }
+
+    40%,
+    70% {
+      width: 40px;
+      height: 40px;
+      transform: rotate(calc(360deg / 8 * var(--i)));
+      box-shadow: 0 0 0 10px #ffffff;
+    }
+
+    90%,
+    100% {
+      width: 100px;
+      height: 100px;
+      transform: rotate(0deg) translateX(120px);
+    }
+  }
+
+  svg {
+    width: 0;
+    height: 0;
+  }
+</style>
